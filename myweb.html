@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MY WEB</title>
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<script type="text/javascript" src="myjs.js"></script>
+</head>
+<body onload="init()">
+<header class="header" id="top">
+	<h1 id="p">APPLE</h1>
+</header>
+
+<nav class="nav">
+	<ul>
+		<li><a href="#about">About</a></li>
+		<li><a href="#products">Products</a></li>
+		<li><a href="#advertise">Advertise</a></li>
+		<li><a href="#sales">Sales</a></li>
+	</ul>
+</nav>
+	
+<section class="section">
+	<article id="about" class="article">
+		<h4>ABOUT</h4>
+		<hr><br>
+		<img src="img/apple_logo.png" id="applelogo" width="500"
+			 onmouseover="startTimer(3000)"
+			 onmouseout="cancelTimer()">
+		<p>
+			스티브 잡스와 스티브 워즈니악, 로널드 웨인이 지하 창고에서 Apple Computer Company를 창업했다. 
+			현재 CEO는 스티브 잡스가 팀 쿡에게 자리를 넘겼다. Apple사의 제품은 Mac, iPhone, iPad, 
+			Apple Watch, iPod, Apple TV, 오디오, 디스플레이 등이 있다. Apple의 보안 기술에는 지문 
+			인식 기술인 Touch ID와 얼굴 인식 기술인 Face ID가 있다. Apple은 다양한 서비스를 제공할 뿐만 
+			아니라 장애인에 대한 손쉬운 사용과 높은 접근성을 제공한다. 시각에는 화면을 읽어주는 VoiceOver 
+			기능, 점자 기능, 영화 감상 시 구체적인 설명을 해주는 오디오 설명 기능 등이 있고 청각에는 기기의 
+			인공 지능을 활용해 소리를 감지한 후 사용자에게 알려주는 소리 인식 기능 등이 있다. 또한 
+			2020년부터 탄소 중립을 실천해오며 환경 문제에도 신경을 쓰고 있다. 물병을 업사이클링하거나 
+			아이폰을 재활용 가능한 부품으로 만드는 등 갖은 노력을 하고 있다.
+		</p>
+	</article>
+	<article id="products" class="article">
+		<h4>PRODUCTS</h4>
+		<hr>
+		<ul>
+			<li onclick="changeImg(1)">Mac</li>
+			<li onclick="changeImg(2)">Ipad</li>
+			<li onclick="changeImg(3)">Iphone</li>
+			<li onclick="changeImg(4)">Watch</li>
+			<li onclick="changeImg(5)">AirPods</li>
+			<li onclick="changeImg(6)">etc.</li>
+		</ul>
+		<div id="productImg"></div>
+	</article>
+	<article id="advertise" class="article">
+		<h4>ADVERTISE</h4>
+		<hr><br>
+		<iframe src="https://www.youtube.com/embed/hz86m-aZgUU" width="800" height="400"></iframe>
+		<details>
+			<summary>Don't Blink</summary>
+			<p><small>아이폰 7 광고 한국어 버전</small></p>
+		</details><br>
+		<iframe src="https://www.youtube.com/embed/c2jYtkwOwF8" width="800" height="400"></iframe>
+		<details>
+			<summary>Apple iPad</summary>
+			<p><small>아이패드 1 (2010)</small></p>
+		</details><br>
+	</article>
+	<article id="sales" class="article">
+		<h4>SALES</h4>
+		<hr><br>
+		<canvas id="canvas" width="500" height="300" onclick="viewChart()"></canvas><br>
+		<p id="chart"></p>
+	</article>
+	<div class="topDiv"><a href="#top">TOP</a></div>
+</section>
+	
+<aside class="aside">
+	<form>
+		<textarea cols="40" rows="5">의견 작성</textarea><br>
+		<input type="submit" value="SUBMIT">
+	</form>
+</aside>
+<script type="text/javascript" src="myjs.js"></script>
+</body>
+</html>
